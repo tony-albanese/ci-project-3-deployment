@@ -1,1 +1,6 @@
-# Your requirements go here
+importlib-metadata==4.13.0
+nanoid==2.0.0
+numpy==1.23.5
+pandas==1.5.2
+pytz==2022.6
+textual==0.6.0
