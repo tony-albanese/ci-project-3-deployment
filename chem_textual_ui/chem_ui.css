@@ -1,0 +1,49 @@
+
+MainPanel {
+layout: horizontal;
+height: 4fr;
+}
+
+
+Button {
+width: 1fr;
+}
+
+DataWindow {
+width: 0.9fr;
+border: blank;
+}
+
+
+OutputPanel {
+width: 1.1fr;
+
+}
+
+InstructionsWindow {
+width: 1fr;
+border: solid white;
+}
+
+#products, #reactants, #output {
+height: 1fr;
+}
+
+#products {
+border: solid green;
+}
+#product_input {
+border: solid green;
+}
+
+#reactants {
+border: solid blue;
+}
+
+#reactant_input {
+border: solid blue;
+}
+
+#output {
+border: solid orange;
+}
