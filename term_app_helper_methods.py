@@ -1,8 +1,12 @@
 import pandas.core.frame
+import pandas as pd
 
-from chem_data.data_set import *
-from rich import print
 import re
+
+def load_data_frame():
+    dataFrame = pd.read_csv('molecule_data.csv')
+    dataFrame['dH'] = dataFrame['dH'].astype(float)
+    return dataFrame
 
 
 def calculate_thermodynamic_properties():
@@ -149,10 +153,10 @@ def calculate_entropy_change(data_frame: pandas.core.frame.DataFrame, reactants:
     print(sum_reactants)
     return entropy_change
 
-def generate_thermodynamic_calculations():
-    df = load_data_frame()
-    reactants = get_reactants()
-    products = get_products()
+def generate_thermodynamic_calculations(df:pandas.core.frame.DataFrame, reactants: list, products: list):
+    #df = load_data_frame()
+    #reactants = get_reactants()
+    #products = get_products()
 
     dH = calculate_enthalpy_change(df, reactants, products)
     dG = calculate_free_energy(df, reactants, products)
@@ -168,7 +172,6 @@ def generate_thermodynamic_calculations():
     The free energy change (dG) is: {dG} kJ per mol
     The entropy change (dS) is: {dS} kJ per mol per Kelvin
     """
-    print(report)
     return report
 
 def extract_chemical_formulas(df: pandas.core.frame.DataFrame, chemical_list: list):
@@ -178,10 +181,11 @@ def extract_chemical_formulas(df: pandas.core.frame.DataFrame, chemical_list: li
     col_formula = 'formula'
     for chemical in chemical_list:
         row = chemical[0]
+        coefficient = chemical[1]
         name = df._get_value(row, col_name)
         formula = df._get_value(row, col_formula)
         state = df._get_value(row, col_state)
-        full_formula = f'{formula} {name} {state}'
+        full_formula = f'{coefficient} of {formula} {name} {state}'
         product_formulas.append(full_formula)
 
     return product_formulas

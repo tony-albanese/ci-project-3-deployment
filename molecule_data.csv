@@ -1,0 +1,59 @@
+name,formula,state,dH,dG,dS
+carbon,C,s,0,0,5.69
+hydrogen,H2,g,0,0,144.6
+nitrogen,N2,g,0,0,51.1
+oxygen,O2,g,0,0,204.8
+sulfur,S,s,0,0,31.8
+phoshorus,P,s,0,0,22.7
+chlorine,Cl2,g,0,0,223
+bromine,Br2,l,0,0,152
+bromine,Br2,s,30.8,3.2,245
+fluorine,F2,g,0,0,202
+sodium,Na,s,0,0,51
+potassium,K,s,0,0,64.12
+lithium,Li,s,0,0,29
+methane,CH4,g,-74,-50,186
+ethane,C2H6,g,-84,-32,230
+propane,C3H8,g,-105,-24,270
+butane,C4H10,g,126,-17,310
+pentane,C5H12,l,-173,-8,263
+hexane,C6H14,l,-199,-0.17,296
+ethene,C2H4,g,52,68,220
+propene,C3H6,g,20,62,267
+but-1-ene,C4H8,g,0.1,71,306
+cis-but-2-ene,C4H8,g,-7,66,301
+trans-but-2-ene,C4H8,g,-11,63,297
+ethyne,C2H2,g,228,211,201
+propyne,C3H4,g,185,194,248
+"buta-1,3-diene",C4H6,g,110,151,279
+cyclohexane,C6H12,l,-156,31.78,203
+benzene,C6H6,l,49,125,173
+methylbenzene,C6H5CH3,l,12,113,218
+ethylbenzene,C6H5CH2CH3,l,-12,119,254
+phenylethene,C6H5CHCH2,l,104,201,237
+chloromethane,CH3Cl,g,-82,-58,235
+dichloromethane,CH2Cl2,l,-124,-71,178
+trichloromethane,CHCl3,l,-134,-74,202
+bromomethane,CH3Br,g,-36,-26,246
+iodomethane,CH3I,l,-14,15,163
+chloroethane,C2H5Cl,g,-137,-53,275
+bromoethane,C2H5Br,l,-90,-26,199
+chlorobenzene,C6H5Cl,l,11,89,209
+methanol,CH3OH,l,-239,-167,127
+ethanol,C2H5OH,l,-278,-175,161
+phenol,C6H5OH,s,-165,-50,144
+methanal,HCHO,g,-109,-102,219
+ethanal,CH3CHO,g,-166,-133,264
+propanone,(CH3)2CO,l,-248,-155,200
+methanoic acid,HCOOH,l,-425,-361,129
+ethanoic acid,CH3COOH,l,-484,-390,160
+benzoic acid,C6H5COOH,s,-385,-245,168
+methylamine,CH3NH2,g,-23,32,243
+water,H2O,l,-285,-237,70
+steam,H2O,g,-241,-228,188.8
+carbon monoxide,CO,g,-110,-167,197.7
+carbon dioxide,CO2,g,-393,-394,213.8
+hydrogen bromide,HBr,g,-36.3,-53.4,198.7
+hydrogen chloride,HCl,g,-92.3,-95.5,186.9
+hydrogen fluoride,HF,g,-273.3,-275,173.8
+hydrogen iodide,HI,g,26.5,1.7,206
